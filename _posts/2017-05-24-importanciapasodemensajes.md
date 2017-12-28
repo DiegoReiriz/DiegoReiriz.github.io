@@ -14,7 +14,7 @@ El paso de mensajes, lo podemos considerar como un tipo de arquitectura de softw
 
 La idea detrás de esta forma de diseñar software es bastante sencilla y natural para nosotros como seres humanos, tenemos a un productor de mensajes, un canal/medio en el que se publican mensajes y uno o varios receptores.
 
-![{{site.baseurl}}/images/mp0.png]({{site.baseurl}}/images/mp0.png)
+![assets/images/importanciapasodemensajes/mp0.png](assets/images/importanciapasodemensajes/mp0.png)
 
 En este tipo de diseños, el emisor no necesita realmente especificar quien es el destinatario del mensaje que quiere enviar, su única preocupación es producir un mensaje y publicarlo en el canal de comunicación adecuado. Mientras que en el lado del Receptor, este simplemente se tiene que preocupar de si el mensaje se dirige a él y si entiende el contenido del mensaje.
 Si aplicamos esta idea al desarrollo de software, podríamos tener un código (java en este caso) como el siguiente:
@@ -37,11 +37,11 @@ Si aplicamos esta idea al desarrollo de software, podríamos tener un código (j
 ## Esto nos tiene que sonar
 La implementación realizada anteriormente nos debería recordar al patrón de diseño Observer, donde un emisor mantiene una lista de Observadores que están a la espera de que el emisor emita algún tipo de evento.
 
-![{{site.baseurl}}/images/mp1.gif]({{site.baseurl}}/images/mp1.gif)
+![assets/images/importanciapasodemensajes/mp1.gif](assets/images/importanciapasodemensajes/mp1.gif)
 
 La principal diferencia entre el diseño anterior y un patrón de diseño Observer puro, es que en nuestro diseño estamos desacoplando a los emisores y a los observadores mediante la introducción de un canal. Lo que realmente tenemos es una versión muy simple de un patrón de arquitectura de paso de mensajes, conocido como publica-subscribe.
 
-![{{site.baseurl}}/images/mp2.jpg]({{site.baseurl}}/images/mp2.jpg)
+![assets/images/importanciapasodemensajes/mp2.jpg](assets/images/importanciapasodemensajes/mp2.jpg)
 
 ## Que principales ventajas nos proporcionan este tipo de diseños?
 
@@ -57,25 +57,25 @@ Cuando aplicamos cualquier tipo de patrón de diseño, así como de arquitectura
 
 Lo realmente interesante respecto al patrón de arquitectura que se ha presentado, es su gran versatilidad, ya que sin complicarnos mucho la vida podemos implementar y combinar cualquiera de los patrones de comunicación que se nos ocurra.
 
-![{{site.baseurl}}/images/mp3.png]({{site.baseurl}}/images/mp3.png)
+![assets/images/importanciapasodemensajes/mp3.png](assets/images/importanciapasodemensajes/mp3.png)
 
 Por otro lado, si simplemente modificamos el canal que forma parte de nuestro diseño actual, también podemos lograr comportamientos bastante interesantes. A continuación se muestran posibles modificaciones:
 
 - **Adición de persistencia al canal**: puede ser de gran utilidad que el canal registre y mantengan un número determinado de mensajes y que los consumidores elijan cuando consumirlos, dando lugar al famoso patrón productor-consumidor.
 
-![{{site.baseurl}}/images/mp4.jpg]({{site.baseurl}}/images/mp4.jpg)
+![assets/images/importanciapasodemensajes/mp4.jpg](assets/images/importanciapasodemensajes/mp4.jpg)
 
 - **Soporte de operaciones sobre el canal**: independientemente de si el canal dispone o no de persistencia para los mensajes, es interesante barajar la opción del diseño de un canal que aplique una operación (normalmente una función pura) a todos los mensajes que este contiene, ya sea aplicándola a todos los elementos actuales almacenados en el canal o de forma individual cuando estos se añaden al mismo. El tipo de operaciones que se pueden realizar son de todo tipo: operaciones de filtrado, operaciones de ordenación, operaciones aritméticas (si fijamos el tipo de datos del canal), operaciones de transformación…
 
-![{{site.baseurl}}/images/mp5.png]({{site.baseurl}}/images/mp5.png)
+![assets/images/importanciapasodemensajes/mp5.png](assets/images/importanciapasodemensajes/mp5.png)
 
 - **Unión y división de canales**: es interesante hacer que un mismo canal se pueda subdividir en varios bajo una condición, o justamente lo contrario, que varios canales agrupen sus mensajes.
 
-![{{site.baseurl}}/images/mp6.png]({{site.baseurl}}/images/mp6.png)
+![assets/images/importanciapasodemensajes/mp6.png](assets/images/importanciapasodemensajes/mp6.png)
 
 Otra opción que tenemos a la hora de evolucionar el diseño presentado, es la adición de un nuevo elemento, el broker. El principal propósito de este es coordinar las llamadas a servicios en arquitecturas orientadas a los mismos, además de poder validar si las peticiones cumplen con el formato esperado. Si queremos generalizar el comportamiento de este, para la situación que hemos planteado, podemos considerarlo como una fachada que elige a que canales se dirigen los mensajes. Donde en este caso, lo más probable es que los canales dispongan de una serie de acciones o filtros que adecuan el formato de los mensajes a los consumidores del canal.
 
-![{{site.baseurl}}/images/mp7.png]({{site.baseurl}}/images/mp7.png)
+![assets/images/importanciapasodemensajes/mp7.png](assets/images/importanciapasodemensajes/mp7.png)
 
 Podría continuar sugiriendo más modificaciones sobre el diseño base, pero creo que ha quedado más que claro que el diseño es bastante versátil y al final todo consiste en adaptarlo a las necesidades que tengamos en cada caso.
 
