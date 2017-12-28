@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Conectando Apache Flink con Elasticsearch 
+title: Conectando Apache Flink con Elasticsearch
 image:  /images/elasticflink.png
 category: development
 tags: [apache, flink, elasticsearch, connectors, rest, scala, scalaj]
@@ -27,7 +26,7 @@ Entonces he optado por pasarme a mi segunda opción que es utilizar la API REST 
 
 # Manos a la obra
 
-En mi caso estoy utilizando el framework **Apache Flink** en su versión **1.3**, con la versión **2.10** del lenguaje **Scala**. 
+En mi caso estoy utilizando el framework **Apache Flink** en su versión **1.3**, con la versión **2.10** del lenguaje **Scala**.
 
 Lo primero que he realizado es añadir como dependencia al proyecto la libreía [scalaj-http](https://github.com/scalaj/scalaj-http) que actúa como un wrapper de  [java.net.HttpURLConnection](https://docs.oracle.com/javase/8/docs/api/java/net/HttpURLConnection.html) y añade bastante azucar sintáctico. Para ello basta con añadir a nuestro **pom.xml** la siguiente dependencia.
 
@@ -44,7 +43,3 @@ Si queremos aplicar esto sobre los datos de nuestro streaming en Flink, bastarí
 Con esto, ya estaríamos insertando de **forma sencilla** nuestros datos en elasticsearch. Obviamente, esta **no es la forma más eficiente** de insertar los datos, ya que estamos generando una petición http por cada elemento de nuestro stream, cuando lo más razonable sería **esperar a que se cumpla una ventana temporal** o se **acumule un volumen de datos** considerable antes de realizar una insercción. Pero eso ya son cuestiones de diseño dependientes del comportamiento de cada sistema.
 
 Por último, si queremos que esto tenga un toque **un poco más profesional**, en vez de formar en un String el JSON que queremos enviar en el cuerpo de la petición POST, sería conveniente utilizar un motor de renderizado de plantillas como puede ser [mustache](https://mustache.github.io/) o [pug](https://pugjs.org/api/getting-started.html).
-
-
-
-

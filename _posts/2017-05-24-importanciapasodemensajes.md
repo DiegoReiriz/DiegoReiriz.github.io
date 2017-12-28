@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Entendiendo la importancia del paso de mensajes
 image: https://cdn-images-1.medium.com/max/800/0*7na_PaxW7A1VG6FN.png
 category: development
