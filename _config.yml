@@ -84,7 +84,7 @@ analytics:
 # Site Author
 author:
   name             : "Diego Reiriz Cores"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar.jpg"
   bio              : "All this randomness it's only mine \n\r\t. AI Master Student, Software Engineer at @Gradiant, CS by @etse_usc & Human debugger. Talk is cheap, Show me the c0d3!"
   location         : "Vigo, Spain"
   email            : "diegoreiriz@gmail.com"
