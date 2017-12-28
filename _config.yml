@@ -8,11 +8,11 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
+locale                   : "es"
+title                    : "diegoreico"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Diego Reiriz Cores"
+description              : "My Dev Blog & R4nd00m Th1ngs"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -61,7 +61,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "diegoreico"
 facebook:
   username               :
   app_id                 :
@@ -83,11 +83,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Diego Reiriz Cores"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "All this randomness it's only mine \n\r\t. AI Master Student, Software Engineer at @Gradiant, CS by @etse_usc & Human debugger. Talk is cheap, Show me the c0d3!"
+  location         : "Vigo, Spain"
+  email            : "diegoreiriz@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "diegoreiriz"
   gitlab           :
   google_plus      :
   keybase          :
@@ -108,7 +108,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : "diegoreico"
   vine             :
   weibo            :
   xing             :
