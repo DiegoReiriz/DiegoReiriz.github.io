@@ -14,6 +14,6 @@ Mis intereses son el diseño de software y las diferentes arquitecturas del mism
 
 Creo que no hace falta decir que me encanta probar e indagar en la mayoría de las tecnologías nuevas que me caen en las manos independientemente de su propósito. Por otro lado, también intento aprender herramientas y técnicas que me ayudan a ser más productivo y mejorar la calidad de mis desarrollos.
 
-Fuera de aquí me puedes encontrar en mis redes sociales, haciendo Sanda o dando una vuelta con mi perro :)
+Fuera de aquí me puedes encontrar en mis redes sociales, en caso contario, nos vemos en algún evento de tecnología :)
 
 ![/assets/images/perfil_footer.jpg](/assets/images/perfil_footer.jpg)
