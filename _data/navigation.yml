@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Talks"
+    url: /talks
   - title: "About me"
     url: /aboutme
   # - title: "About"

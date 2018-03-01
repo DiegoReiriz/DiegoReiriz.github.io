@@ -5,10 +5,7 @@ layout: archive
 
 ![/assets/images/perfil_header.jpg](/assets/images/perfil_header.jpg)
 
-Soy estudiante de un máster de introducción a la investigación en inteligencia artificial y al mismo 
-tiempo trabajo como Ingeniero de Software e Investigador en Gradiant. Anteriormente he sido 
-organizador del GDG de Santiago de Compostela y ahora intento participar e involucrarme con las 
-comunidades tecnológicas de Vigo [http://vigotech.org/](http://vigotech.org/)
+Soy estudiante de un máster de introducción a la investigación en inteligencia artificial y al mismo tiempo trabajo como Ingeniero de Software e Investigador en Gradiant. Anteriormente he sido organizador del GDG de Santiago de Compostela y ahora intento participar e involucrarme con las comunidades tecnológicas de Vigo [http://vigotech.org/](http://vigotech.org/)
 
 Mis intereses son el diseño de software y las diferentes arquitecturas del mismo que se utilizan hoy en día. Así mismo, también me interesan temáticas como: el machine learning, análisis de datos, HPC (high performance computing), seguridad informática, hacking ético...
 
