@@ -29,7 +29,7 @@ t0 	 t1 	 t2 	 t3 	 t4 	 t5 	 t6 	 t7 	 t8 	 t9 	 t10 	 t11 	 t12 	 t13 	 t14
 ![graph](/assets/images/flinkzeppelin/plot.png)
 
 
-if you print your data inside a notebook paragraph it will automatically allow you to do scatter plots, bar plots, pie charts, etc. and c'mon that's freaking amazing, you don't have to write you data in a DB/File/Thing and then plot the data using other tools, so you can have all your work in a single place and that's nice.
+If you print your data inside a notebook paragraph it will automatically allow you to do scatter plots, bar plots, pie charts, etc. and c'mon that's freaking amazing, you don't have to write you data in a DB/File/Thing and then plot the data using other tools, so you can have all your work in a single place and that's nice.
 
 So, if everything is nice, what am I doing here writting all this? By default, Zeppelin brings a Flink interpreter that you can use to run Flink workloads and when you execute it for the first time, it will start a Flink local minicluster in wich Zeppelin will run your workload and that's great if you are doing small tests, but when the problem scales a bit that cluster isn't enough. Also the Flink minicluster that brings Zeppelin is running Flink 1.1.3 and Flink 1.5 it's already out so I want to rock with Flink 1.5 instead of an older version if I am able to do it (Spoiler: we will be able to do it ;) )
 
@@ -93,11 +93,12 @@ zeppelinflink15_taskmanager_1   /docker-entrypoint.sh task ...   Up      6121/tc
 zeppelinflink15_taskmanager_2   /docker-entrypoint.sh task ...   Up      6121/tcp, 6122/tcp, 6123/tcp, 8081/tcp         
 zeppelinflink15_zeppelin_1      /usr/bin/tini -- bin/zeppe ...   Up      0.0.0.0:8080->8080/tcp   
 ```
-If we access to http://localhost:8080 we should have access to zeppeling UI 
+
+If we access to ![http://localhost:8080](http://localhost:8080) we should have access to zeppeling UI 
 
 ![zeppelinUI](/assets/images/flinkzeppelin/zeppelinui.png)
 
-And if we access to http://localhost:8081 we should be able to see Flink's Web UI
+And if we access to !(http://localhost:8081)[http://localhost:8081] we should be able to see Flink's Web UI
 
 ![FlinkUi](/assets/images/flinkzeppelin/flinkui.png)
 
