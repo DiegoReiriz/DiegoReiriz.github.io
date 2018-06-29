@@ -94,11 +94,11 @@ zeppelinflink15_taskmanager_2   /docker-entrypoint.sh task ...   Up      6121/tc
 zeppelinflink15_zeppelin_1      /usr/bin/tini -- bin/zeppe ...   Up      0.0.0.0:8080->8080/tcp   
 ```
 
-If we access to ![http://localhost:8080](http://localhost:8080) we should have access to zeppeling UI 
+If we access to [http://localhost:8080](http://localhost:8080) we should have access to zeppeling UI 
 
 ![zeppelinUI](/assets/images/flinkzeppelin/zeppelinui.png)
 
-And if we access to !(http://localhost:8081)[http://localhost:8081] we should be able to see Flink's Web UI
+And if we access to [http://localhost:8081](http://localhost:8081) we should be able to see Flink's Web UI
 
 ![FlinkUi](/assets/images/flinkzeppelin/flinkui.png)
 
