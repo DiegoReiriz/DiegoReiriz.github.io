@@ -102,5 +102,10 @@ And if we access to [http://localhost:8081](http://localhost:8081) we should be 
 
 ![FlinkUi](/assets/images/flinkzeppelin/flinkui.png)
 
+## Setting up the environment
+
+Once we have all the parts that we need, the next step is to configure Zeppelin to use our Flink cluster when we run a paragraph of code with the flink interpreter `%flink`. For this, we need to go to the [interpreters section inside Zeppelin UI](http://localhost:8080/#/interpreter) and find the Flink interpreter '%flink'
+
+![Default flink interpreter](/assets/images/flinkzeppelin/flinkinterpreter.png)
 
 
