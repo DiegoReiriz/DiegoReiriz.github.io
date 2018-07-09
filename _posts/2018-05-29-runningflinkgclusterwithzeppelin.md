@@ -31,7 +31,7 @@ t0 	 t1 	 t2 	 t3 	 t4 	 t5 	 t6 	 t7 	 t8 	 t9 	 t10 	 t11 	 t12 	 t13 	 t14
 
 If you print your data inside a notebook paragraph it will automatically allow you to do scatter plots, bar plots, pie charts, etc. and c'mon that's freaking amazing, you don't have to write you data in a DB/File/Thing and then plot the data using other tools, so you can have all your work in a single place and that's nice.
 
-So, if everything is nice, what am I doing here writting all this? By default, Zeppelin brings a Flink interpreter that you can use to run Flink workloads and when you execute it for the first time, it will start a Flink local minicluster in wich Zeppelin will run your workload and that's great if you are doing small tests, but when the problem scales a bit that cluster isn't enough. Also the Flink minicluster that brings Zeppelin is running Flink 1.1.3 and Flink 1.5 it's already out so I want to rock with Flink 1.5 instead of an older version if I am able to do it (Spoiler: we will be able to do it ;) )
+So, if everything is nice, what am I doing here writting all this? By default, Zeppelin brings a Flink interpreter that you can use to run Flink workloads and when you execute it for the first time, it will start a Flink local minicluster in wich Zeppelin will run your workload and that's great if you are doing small tests, but when the problem scales a bit that cluster isn't enough. Also the Flink minicluster that brings Zeppelin is running Flink 1.1.3 and Flink 1.5 it's already out. The sad part about this, it that i only had time to make it run with Flink 1.4.2, because until that version Flink's jobs could be sended using an RPC port Job Manager's port 6123, but since that version jobs should be sended using Flink's REST API, so Zeppelin's interpreter should be patched to use the REST API.
 
 ## Creating our environmet
 
@@ -45,7 +45,7 @@ services:
 #           FLINK
 #=============================
   jobmanager:
-    image: flink:1.5
+    image: flink:1.4.2
     expose:
       - "6123"
     ports:
@@ -56,7 +56,7 @@ services:
       - JOB_MANAGER_RPC_ADDRESS=jobmanager
 
   taskmanager:
-    image: flink:1.5  
+    image: flink:1.4.2
     expose:
       - "6121"
       - "6122"
@@ -234,9 +234,9 @@ Now that we have ensured ourselves that we don't have the libraries compatibles 
 
 |artifact						|exclude										|
 |-------------------------------------------------------|---------------------------------------------------------------------------------------|
-|org.apache.flink:flink-streaming-scala_2.11:1.5.0	|org.scala-lang:scala-library,org.scala-lang:scala-reflect,org.scala-lang:scala-compiler|
-|org.apache.flink:flink-scala_2.11:1.5.0		|org.scala-lang:scala-library,org.scala-lang:scala-reflect,org.scala-lang:scala-compiler|
-|org.apache.flink:flink-clients_2.11:1.5.0		|org.scala-lang:scala-library,org.scala-lang:scala-reflect,org.scala-lang:scala-compiler|
+|org.apache.flink:flink-streaming-scala_2.11:1.4.2	|org.scala-lang:scala-library,org.scala-lang:scala-reflect,org.scala-lang:scala-compiler|
+|org.apache.flink:flink-scala_2.11:1.4.2		|org.scala-lang:scala-library,org.scala-lang:scala-reflect,org.scala-lang:scala-compiler|
+|org.apache.flink:flink-clients_2.11:1.4.2		|org.scala-lang:scala-library,org.scala-lang:scala-reflect,org.scala-lang:scala-compiler|
 
 And I've also changed the property `host` of the interpreter from `local` to `jobmanager`, with this change the Flink interpreter will access to the container inside our docker-compose, named as Jobmanager, instead of start a new Flink mini cluster when we run a Flink paragraph. 
 
