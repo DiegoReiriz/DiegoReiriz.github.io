@@ -208,7 +208,7 @@ zeppelin-flink_2.11-0.7.3.jar
 zookeeper-3.4.6.jar
 ```
 
-And in all that mess we can see that is using Flink 1.1.3 for Scala 2.11:
+And in all that mess we can see that it is using Flink 1.1.3 for Scala 2.11:
 
 ```
 ls interpreter/flink/ | grep "flink"
@@ -228,7 +228,7 @@ flink-streaming-scala_2.11-1.1.3.jar
 zeppelin-flink_2.11-0.7.3.jar
 ```
 
-Now that we have ensured ourselves that we don't have the libraries compatibles to our Flink Cluster, we have to add them to the interpreter in some way.  I have choose to edit the `flink` interpreter using the UI and  add the following dependencies supressing the Scala classes because we already have that libs loaded in the interpreter.
+Now that we have ensured ourselves that we don't have compatible libraries for our Flink Cluster, we have to add them to the interpreter in some way.  I have choose to edit the `flink` interpreter using the UI and  add the following dependencies supressing the Scala classes because we already have that libs loaded in the interpreter.
 
 	NOTE: the dependencies will be downloaded from mvn central repository
 
@@ -238,10 +238,51 @@ Now that we have ensured ourselves that we don't have the libraries compatibles 
 |org.apache.flink:flink-scala_2.11:1.4.2		|org.scala-lang:scala-library,org.scala-lang:scala-reflect,org.scala-lang:scala-compiler|
 |org.apache.flink:flink-clients_2.11:1.4.2		|org.scala-lang:scala-library,org.scala-lang:scala-reflect,org.scala-lang:scala-compiler|
 
-And I've also changed the property `host` of the interpreter from `local` to `jobmanager`, with this change the Flink interpreter will access to the container inside our docker-compose, named as Jobmanager, instead of start a new Flink mini cluster when we run a Flink paragraph. 
+And I have also changed the property `host` of the interpreter from `local` to `jobmanager`, with this change the Flink interpreter will access to the container inside our docker-compose, named as Jobmanager, instead of start a new Flink mini cluster when we run a Flink paragraph. 
 
 Image with all changes made
 
 ![Dependencies](/assets/images/flinkzeppelin/dependencies.png)
 
+
+## Testing
+
+With all changes made, now you should be able the code inside your Flink interpreter on top of your Flink cluster. To check if everything is working, you can run the following piece of code:
+
+```
+
+val dataset = benv.fromCollection(List(
+    Array(1,2,3,4,5,0,0,0,0,0,0,0,0,0,0),
+    Array(1,1,2,3,4,5,0,0,0,0,0,0,0,0,0),
+    Array(1,2,2,2,3,4,4,5,0,0,0,0,0,0,0),
+    Array(1,3,4,5,0,0,0,0,0,0,0,0,0,0,0),
+    Array(1,1,1,2,2,2,3,3,3,4,4,4,5,5,5),
+    Array(1,1,2,3,1,4,5,0,0,0,0,0,0,0,0),
+    Array(1,2,3,1,1,4,5,0,0,0,0,0,0,0,0),
+    Array(1,5,3,2,4,0,0,0,0,0,0,0,0,0,0),
+    Array(1,5,5,3,2,1,4,0,0,0,0,0,0,0,0),
+    Array(1,5,5,3,5,1,4,2,0,0,0,0,0,0,0),
+    Array(2,3,3,3,4,5,1,0,0,0,0,0,0,0,0)
+    )
+)
+
+val results = dataset.collect()
+
+var table = "%table\n"
+table += "t0 \t t1 \t t2 \t t3 \t t4 \t t5 \t t6 \t t7 \t t8 \t t9 \t t10 \t t11 \t t12 \t t13 \t t14 \n"
+for(result <- results){
+    for(item <- result){
+        table += item + "\t"
+    }
+    table += "\n"
+}
+println(table)
+
+```
+
+For that piece of code you should have the follwing output without any errors:
+
+![Dependencies](/assets/images/flinkzeppelin/expectedOutput.png)
+
+And that's all, I hope that this post could be helpful for those working with Apache Zeppelin and Apache Flink and you can ping me on twitter @diegoreico if you want to talk about something related to this.
 
