@@ -245,7 +245,7 @@ Image with all changes made
 
 ## Testing
 
-With all changes made, now you should be able the code inside your Flink interpreter on top of your Flink cluster. To check if everything is working, you can run the following piece of code:
+With all changes made, now you should be able to run the following piece of code inside your Flink interpreter on top of your Flink cluster.
 
 ```
 
