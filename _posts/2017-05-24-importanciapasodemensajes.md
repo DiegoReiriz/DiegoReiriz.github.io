@@ -4,7 +4,7 @@ image: https://cdn-images-1.medium.com/max/800/0*7na_PaxW7A1VG6FN.png
 category: development
 tags: [arquitectura, paso, de, mensajes, desacoplamiento, ventajas]
 ---
-Esta vez me apetece hablar de un concepto de diseño de software, como es el paso de mensajes, que ha calado en múltiples niveles del desarrollo del mismo, así como en la organización y la comunicación de los sistemas informáticos .
+Esta vez me apetece hablar de un concepto de diseño de software, como es el paso de mensajes, que ha calado en múltiples niveles del desarrollo del mismo, así como en la organización y la comunicación de los sistemas informáticos.
 
 ## En que cosiste el paso de mensajes?
 
