@@ -3,10 +3,6 @@ title: Talks
 layout: archive
 ---
 
-2018:
-
-- [Testing Your Big Data Jobs](https://docs.google.com/presentation/d/1Je3yTNQmwt964z5BTeMaEy0NQLAiC-rriBBTERmbRM8/edit?usp=sharing)
-
 2017:
 
 - [Browser Fingerprinting](https://docs.google.com/presentation/d/16ksieCW77IvaRfoHhzCtRPAofX7es-1VWoDn_I5WZOU/edit?usp=sharing)
