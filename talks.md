@@ -3,6 +3,13 @@ title: Talks
 layout: archive
 ---
 
+2018:
+- Evolving Neural Nets with Genetic Algorithms at Gradiant's Machine Learning Sharing Group
+- Evolutionary and Genetic Algorithms at Gradiant's Machine Learning Sharing Group
+- Apache Flink: What I have learned at Flink Forward Berlin 2018 at Gradiant
+- Introduction to Apache Flink at Gradiant
+- Testing your Big Data Jobs at VigoJug
+
 2017:
 
 - [Browser Fingerprinting](https://docs.google.com/presentation/d/16ksieCW77IvaRfoHhzCtRPAofX7es-1VWoDn_I5WZOU/edit?usp=sharing)
