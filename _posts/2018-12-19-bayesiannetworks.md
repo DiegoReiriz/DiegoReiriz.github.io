@@ -17,7 +17,7 @@ Example: The following image shows a Bayesian Network who describes a conditiona
 
 ![example](/assets/images/bayesiannetworks/example1.png)
 
-What we are trying to describe with this kinf of models is the [full joint probability distribution](https://en.wikipedia.org/wiki/Joint_probability_distribution) of L(Lottey), R(Rain) and W(Wet Ground)
+What we are trying to describe with this kind of models is the [full joint probability distribution](https://en.wikipedia.org/wiki/Joint_probability_distribution) of L(Lottey), R(Rain) and W(Wet Ground)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P(L,&space;R&space;,&space;W)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(L,&space;R&space;,&space;W)" title="P(L, R , W)" /></a>
 
@@ -30,6 +30,8 @@ P(L) doesn't have any connection with a node in the graph so it's completly inde
 Another example:
 
 ![example](/assets/images/bayesiannetworks/example2.png)
+
+For this example the full joint probability can be obtained using the following factorization
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P(R&space;,&space;W,&space;S,&space;C)&space;=&space;P(R)&space;P(C)&space;P(W&space;|&space;C,R)P(S&space;|&space;W)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(R&space;,&space;W,&space;S,&space;C)&space;=&space;P(R)&space;P(C)&space;P(W&space;|&space;C,R)P(S&space;|&space;W)" title="P(R , W, S, C) = P(R) P(C) P(W | C,R)P(S | W)" /></a>
 
