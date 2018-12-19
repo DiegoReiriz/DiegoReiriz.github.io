@@ -1,3 +1,10 @@
+---
+title: My notes on Graphical Models and Bayesian Networks
+image:  /images/bayesiannetworks/bayesheader.jpeg
+category: environments
+tags: [apache, flink, zeppelin, data, cluster, scala, setup, connection, interconnection, confiugration]
+---
+
 # My notes on Graphical Models and Bayesian Networks
 
 [TOC]
