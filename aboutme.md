@@ -5,12 +5,10 @@ layout: archive
 
 ![/assets/images/perfil_header.jpg](/assets/images/perfil_header.jpg)
 
-Soy estudiante de un máster de introducción a la investigación en inteligencia artificial y al mismo tiempo trabajo como Ingeniero de Software e Investigador en Gradiant. Anteriormente he sido organizador del GDG de Santiago de Compostela y ahora intento participar e involucrarme con las comunidades tecnológicas de Vigo [http://vigotech.org/](http://vigotech.org/)
+I am a student of a master's degree in introduction to research in artificial intelligence and at the same time I work as Big Data R&D at Gradiant. Previously I've been an organizer of the GDG of Santiago de Compostela and now I try to participate and get involved with the technological communities of Vigo http://vigotech.org/
 
-Mis intereses son el diseño de software y las diferentes arquitecturas del mismo que se utilizan hoy en día. Así mismo, también me interesan temáticas como: el machine learning, análisis de datos, HPC (high performance computing), seguridad informática, hacking ético...
+I think that i don't need to say that I love trying and investigating most of the new technologies that fall into my hands regardless of their purpose. On the other hand, I also try to learn tools and techniques that help me be more productive and improve my software's quality
 
-Creo que no hace falta decir que me encanta probar e indagar en la mayoría de las tecnologías nuevas que me caen en las manos independientemente de su propósito. Por otro lado, también intento aprender herramientas y técnicas que me ayudan a ser más productivo y mejorar la calidad de mis desarrollos.
-
-Fuera de aquí me puedes encontrar en mis redes sociales, en caso contario, nos vemos en algún evento de tecnología :)
+Out of this web page you can found me on my social networks or you can try to meet me on a technology event :)
 
 ![/assets/images/perfil_footer.jpg](/assets/images/perfil_footer.jpg)
