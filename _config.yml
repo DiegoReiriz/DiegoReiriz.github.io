@@ -85,7 +85,7 @@ analytics:
 author:
   name             : "Diego Reiriz Cores"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "All this randomness it's only mine \n\r\t. AI Master Student, Software Engineer at @Gradiant, CS by @etse_usc & Human debugger. Talk is cheap, Show me the c0d3!"
+  bio              : "All this randomness it's only mine \n\r\t. AI Master Student, Data/ML Engineer, CS by @etse_usc & Human debugger. Talk is cheap, Show me the c0d3!"
   location         : "Vigo, Spain"
   email            : "diegoreiriz@gmail.com"
   uri              :
@@ -102,17 +102,17 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : diegoreico
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  stackoverflow    : 5453610/diegoreico
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
   twitter          : "diegoreico"
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : https://www.youtube.com/channel/UC5Xb8RTsxRlVngSjjbRmZnA
 
 
 # Reading Files
