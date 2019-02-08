@@ -5,8 +5,6 @@ category: conferences
 tags: [apache, OSS, open source, open, source, talks, fosdem, 2019, recordings, data, people, trainning]
 ---
 
-# Interesting FOSDEM 2019 Talks for people working with Data
-
 Last year I could attend to [FOSDEM](https://fosdem.org) 2018 edition at Brussels and I was amazed with the number of cool talks that [FOSDEM](https://fosdem.org) hosts at the same time (it's pretty crazy! look at the [full schedule for 1 day](https://fosdem.org/2019/schedule/day/saturday/))
 
 Unfortunetly, this year I couldn't attend to [FOSDEM](https://fosdem.org) 2019 edition, BUT I filtered all the uploaded talks to only select thoose ones relevant for people with interests on Data Science (like me). By the way, all the [recordings are avaliable on the FOSDEM's ftp web server](https://video.fosdem.org/) if you want to check them.
